@@ -7,6 +7,7 @@ import { FeedbacksPageComponent } from './containers/feedbacks-page/feedbacks-pa
 import { FilterComponent } from './containers/filter/filter.component';
 import { ListComponent } from './containers/list/list.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
